@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Forms - Cadastro de jogos</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="js/post.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Cadastrar Jogos</h1>
+            <p>Preencha os dados abaixo!</p>
+        </header>
+
+        <main>
+            <sectiom id="formulario" method="post">
+                <form id="form-jogo">
+                    <h2>Novo jogo</h2>
+
+                    <label for="title">Nome do jogo:</label>
+                    <input id="title" name="title" type="text" minlength="3" maxlength="120" required/>
+                    
+                    <label for="genero">Gênero:</label>
+                    <input id="genero" name="genero" type="text" minlength="3" maxlength="120" required/>
+
+                    <label for="plataforma">Plataforma:</label>
+                    <input id="plataforma" name="plataforma" type="text" minlength="3" maxlength="120" required/>
+
+                    <label for="ano_lancamento">Ano de lançamento:</label>
+                    <input id="ano_lancamento" name="ano_lancamento" type="number" minlength="4" maxlength="5" required/>
+
+                    <label for="desenvolvedora">Desenvolvedora:</label>
+                    <input id="desenvolvedora" name="desenvolvedora" type="text" minlength="3" maxlength="120" required/>
+
+                    <label for="imageUrl">URL da imagem (opcional):</label>
+                    <input id="imageUrl" name="imageUrl" type="url"/>
+
+                    <button type="submit">Cadastrar jogo</button> 
+                </form>
+
+                <p id="resposta"></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Prática de formulários HTML.</p>
+        </footer>
+    </body>
+</html>
